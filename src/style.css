@@ -15,8 +15,6 @@
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -64,8 +62,8 @@ button:focus-visible {
   flex-direction: column;
   background-color: #ffffff;
   padding: 0.5rem 1.5rem 0 1.5rem;
-  width: 60%;
-  border-radius: 25px;
+  width: 50%;
+  border-radius: 15px;
 }
 
 .Main {
@@ -90,6 +88,7 @@ button:focus-visible {
   min-height: 80px;
   width: 95%;
   align-items: center;
+  min-width: 250px;
 }
 
 .Post-Content {
@@ -205,7 +204,7 @@ header {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 h3 {
@@ -236,6 +235,7 @@ section {
   outline: 1px solid hsl(205, 33%, 90%);
   padding: clamp(1rem, 1.5rem, 2rem);
   border-radius: 0.25rem;
+  background-color: white;
 }
 
 span {
@@ -247,7 +247,7 @@ span {
   border: transparent;
   background: none;
   font-weight: 600;
-  font-size: clamp(0.85rem, 1vw, 0.95rem);
+  font-size: clamp(0.85rem, 1vw, 1rem);
 }
 
 @media (min-width: 601px) {
