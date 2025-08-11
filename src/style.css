@@ -1,0 +1,300 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.Card {
+  box-shadow: 0px 0px 12px 1px #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 0.5rem 1.5rem 0 1.5rem;
+  width: 60%;
+  border-radius: 25px;
+}
+
+.Main {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.name {
+  color: #000;
+  font-size: clamp(0.5rem, 0.65rem + 0.8vw, 1rem);
+}
+
+.Post {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: black;
+  margin-bottom: 0.5rem;
+  position: relative;
+  height: auto;
+  min-height: 80px;
+  width: 95%;
+  align-items: center;
+}
+
+.Post-Content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  gap: 1rem;
+}
+
+.Post-Group {
+  color: hsl(219, 85%, 26%);
+  font-size: clamp(0.5rem, 0.65rem + 0.8vw, 1rem);
+}
+
+.Post-Avatar {
+  margin-left: 1rem;
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+}
+
+.Post-Info {
+  text-align: left;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Post-Message {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.Post-Message-With-Img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Post-Message-With-Img p {
+  margin: 0px;
+}
+
+.Post-Message p {
+  margin: 0;
+}
+
+.Post-Message img {
+  margin: 0;
+}
+
+.Post-Pic {
+  border-radius: 10px;
+}
+
+.Post-React {
+  color: hsl(219, 12%, 42%);
+}
+
+.Post-New {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: hsl(1, 90%, 64%);
+  border-radius: 50%;
+  margin-left: 0.2rem;
+}
+
+.Post-Time {
+  margin: 0;
+  font-size: 0.875rem;
+  color: hsl(219, 14%, 63%);
+}
+
+.Post-With-Img {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+}
+
+.Unread {
+  background-color: hsl(210, 60%, 98%);
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.head-New {
+  background-color: hsl(219, 85%, 26%);
+  border-radius: 10px;
+  color: hsl(0, 100%, 100%);
+  width: 30px;
+  height: 25px;
+  align-content: center;
+  font-weight: 700;
+}
+
+.head-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  color: #000;
+  font-size: clamp(0.85rem, 1.3vw, 2rem);
+}
+
+img {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+
+p {
+  color: hsl(219, 12%, 42%);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: clamp(0.65rem, 0.7rem + 0.9vw, 1rem);
+}
+
+section {
+  outline: 1px solid hsl(205, 33%, 90%);
+  padding: clamp(1rem, 1.5rem, 2rem);
+  border-radius: 0.25rem;
+}
+
+span {
+  color: #000;
+}
+
+#button-reset {
+  color: hsl(219, 12%, 42%);
+  border: transparent;
+  background: none;
+  font-weight: 600;
+  font-size: clamp(0.85rem, 1vw, 0.95rem);
+}
+
+@media (min-width: 601px) {
+  .Post-With-Img .Post-Time {
+    width: fit-content;
+    transform: translateY(-25px);
+  }
+
+  #app {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    background-color: hsl(210, 60%, 98%);
+    height: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .Post-Content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .Card {
+    box-shadow: 0px 0px 12px 1px #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 0.5rem 1.5rem 0 1.5rem;
+    width: 100%;
+    border-radius: 25px;
+  }
+
+  .Main {
+    display: flex;
+    justify-content: center;
+  }
+
+  #app {
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: hsl(210, 60%, 98%);
+  }
+}
+
