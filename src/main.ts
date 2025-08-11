@@ -24,7 +24,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
       <div class="Post Unread" id="Unmarked">
         <div class="Post-Content">
           <div class="Post-Avatar">
-            <img src="/assets/avatar-mark-webber.webp" alt="image of person"/>
+            <img src="assets/avatar-mark-webber.webp" alt="image of person"/>
           </div>
           <div class="Post-Info">
             <div class="Post-Message"> 
@@ -40,7 +40,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
           <div class="Post Unread">
             <div class="Post-Content">
               <div class="Post-Avatar">
-                <img src="/assets/avatar-angela-gray.webp" alt="image of person"/>
+                <img src="assets/avatar-angela-gray.webp" alt="image of person"/>
               </div>
               <div class="Post-Info">
                   <div class="Post-Message"> 
@@ -54,7 +54,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
           <div class="Post Unread">
            <div class="Post-Content">
         <div class="Post-Avatar">
-          <img src="/assets/avatar-jacob-thompson.webp" alt="image of person"/>
+          <img src="assets/avatar-jacob-thompson.webp" alt="image of person"/>
         </div>
         <div class="Post-Info">
          <div class="Post-Message"> 
@@ -70,7 +70,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
               <div class="Post">
                 <div class="Post-Content">
                   <div class="Post-Avatar">
-                    <img src="/assets/avatar-rizky-hasanuddin.webp" alt="image of person"/>
+                    <img src="assets/avatar-rizky-hasanuddin.webp" alt="image of person"/>
                   </div>
                   <div class="Post-Info">
                     <div class="Post-Message"> 
@@ -85,13 +85,13 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
              <div class="Post">
               <div class="Post-Content">
                   <div class="Post-Avatar">
-                    <img src="/assets/avatar-kimberly-smith.webp" alt="image of person"/>
+                    <img src="assets/avatar-kimberly-smith.webp" alt="image of person"/>
                    </div>
                   <div class="Post-With-Img">
                     <div class="Post-Message-With-Img"> 
                       <p><strong class="name">Kimberly Smith </strong> commented on your picture</p>  
                     <div class="Post-Pic-Sec">
-                      <img src="/assets/image-chess.webp" class="Post-Pic"/>
+                      <img src="assets/image-chess.webp" class="Post-Pic"/>
                     </div>
                   </div>
                   <p class="Post-Time">1 week ago</p>
@@ -102,7 +102,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
              <div class="Post">
               <div class="Post-Content">
                 <div class="Post-Avatar">
-                  <img  src="/assets/avatar-nathan-peterson.webp" alt="image of person"/>
+                  <img  src="assets/avatar-nathan-peterson.webp" alt="image of person"/>
                 </div>
                 <div class="Post-Info">
                   <div class="Post-Message"> 
@@ -116,7 +116,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
              <div class="Post">
              <div class="Post-Content">
         <div class="Post-Avatar">
-          <img src="/assets/avatar-anna-kim.webp" alt="image of person"/>
+          <img src="assets/avatar-anna-kim.webp" alt="image of person"/>
         </div>
         <div class="Post-Info">
          <div class="Post-Message"> 
@@ -152,10 +152,10 @@ function DisplayNewPost({ Firstnames, Lastnames, PostList }: PostInput) {
     randomPostType,
     randomAvatar,
     randomGroup,
-    randomMessage,
+    // randomMessage,
     //randomUserPost,
     randomUserPic,
-    randomUserReact,
+    //randomUserReact,
   } = generateNew;
   const timestamp = Math.floor(Date.now() / 1000);
 

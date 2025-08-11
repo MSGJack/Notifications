@@ -66,17 +66,17 @@ export const UserPostList = [
 ];
 
 export const AvatarList = [
-  { avatar: "/assets/Cool-Cat.jpg" },
-  { avatar: "/assets/F-91.jpg" },
-  { avatar: "/assets/Londo.jpg" },
-  { avatar: "/assets/Turn-A-Face.jpg" },
-  { avatar: "/assets/The-Fly.jpg" },
-  { avatar: "/assets/WW.jpg" },
+  { avatar: "assets/Cool-Cat.jpg" },
+  { avatar: "assets/F-91.jpg" },
+  { avatar: "assets/Londo.jpg" },
+  { avatar: "assets/Turn-A-Face.jpg" },
+  { avatar: "assets/The-Fly.jpg" },
+  { avatar: "assets/WW.jpg" },
 ];
 
 export const UserPicPost = [
-  { userPic: "/assets/user-cac.jpg" },
-  { userPic: "/assets/user-mojave.jpg" },
-  { userPic: "/assets/user-post.jpg" },
-  { userPic: "/assets/user-salt.jpg" },
+  { userPic: "assets/user-cac.jpg" },
+  { userPic: "assets/user-mojave.jpg" },
+  { userPic: "assets/user-post.jpg" },
+  { userPic: "assets/user-salt.jpg" },
 ];
